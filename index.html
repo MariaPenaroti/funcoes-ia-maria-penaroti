@@ -3,18 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Missão I.A por Maria Penaroti</title>
+    <title>Perguntas e Respostas - Bobbie Goods</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="caixa-principal">
-<th1>Maria Penaroti decide o futuro da I.A</th1>
-<div class="caixa-perguntas"></div>
-<div class="alternativas"></div>
-<div class="caixa-resultados"></div>
-<p class="texto-resultado"></p>
 
-</div>
+    <div class="caixa-principal">
+        <h1>Universo Bobbie Goods ✨</h1>
+        <p class="subtitulo">Quiz interativo com voz por I.A e busca ao vivo no DuckDuckGo</p>
+
+        <!-- Container do Quiz -->
+        <div id="quiz-container">
+            <div class="caixa-perguntas">Carregando pergunta...</div>
+            <div class="caixa-alternativas"></div>
+        </div>
+
+        <!-- Modal de Resultado -->
+        <div class="caixa-resultado escondido">
+            <div class="texto-resultado"></div>
+            
+            <div class="acoes-resultado">
+                <!-- Leitura por Voz I.A -->
+                <button id="btn-ouvir" class="btn-3d btn-voz">
+                    🔊 Ouvir Resposta por I.A
+                </button>
+                
+                <!-- Botão de Pesquisa no DuckDuckGo -->
+                <button id="btn-carregar-noticia" class="btn-3d btn-link">
+                    🔍 Buscar Notícia no DuckDuckGo (na página)
+                </button>
+
+                <!-- Botão Próximo -->
+                <button id="btn-proximo" class="btn-3d btn-proximo">
+                    Próxima Pergunta ➔
+                </button>
+            </div>
+
+            <!-- Form e iFrame para resultados do DuckDuckGo -->
+            <div id="container-iframe" class="escondido">
+                <form id="form-ddg" action="https://html.duckduckgo.com/html/" method="post" target="iframe-ddg">
+                    <input type="hidden" name="q" id="query-ddg" value="">
+                </form>
+                <iframe name="iframe-ddg" id="iframe-ddg" title="Resultados DuckDuckGo"></iframe>
+            </div>
+        </div>
+    </div>
+
     <script src="script.js"></script>   
 </body>
 </html>
