@@ -1,0 +1,147 @@
+/* Fundo Amarelo Pastel */
+body {
+    background-color: #fdf6c7;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Modal em Efeito 3D com fundo Rosa Claro */
+.caixa-principal {
+    background-color: #ffe4e9;
+    width: 100%;
+    max-width: 600px;
+    padding: 30px;
+    border-radius: 25px;
+    border: 3px solid #ffb6c1;
+    box-shadow: 0px 10px 0px #f497a9, 0px 15px 25px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+h1 {
+    color: #d64562;
+    margin-top: 0;
+    font-size: 1.8rem;
+    text-shadow: 1px 1px 0px #fff;
+}
+
+.subtitulo {
+    color: #7a525d;
+    font-size: 0.9rem;
+    margin-bottom: 25px;
+}
+
+.caixa-perguntas {
+    font-size: 1.15rem;
+    font-weight: bold;
+    color: #4a3137;
+    margin-bottom: 20px;
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 15px;
+    border: 2px solid #ffd1dc;
+    box-shadow: inset 0px 2px 5px rgba(0,0,0,0.05);
+}
+
+.caixa-alternativas {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Botões 3D estilo Bobbie Goods */
+.btn-3d {
+    background-color: #ffffff;
+    color: #d64562;
+    border: 2px solid #f497a9;
+    padding: 12px 20px;
+    border-radius: 15px;
+    font-size: 0.95rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0px 5px 0px #f497a9;
+    transition: all 0.1s ease;
+    outline: none;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-3d:hover {
+    background-color: #fff0f3;
+}
+
+.btn-3d:active {
+    transform: translateY(4px);
+    box-shadow: 0px 1px 0px #f497a9;
+}
+
+/* Resultados e Conteúdo */
+.caixa-resultado {
+    margin-top: 20px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid #ffd1dc;
+}
+
+.texto-resultado {
+    font-size: 0.95rem;
+    color: #4a3137;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.acoes-resultado {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn-voz {
+    background-color: #b5ead7;
+    color: #2d6a4f;
+    border-color: #74c69d;
+    box-shadow: 0px 5px 0px #74c69d;
+}
+
+.btn-link {
+    background-color: #c7ceea;
+    color: #3d5a80;
+    border-color: #8fa8d6;
+    box-shadow: 0px 5px 0px #8fa8d6;
+}
+
+.btn-proximo {
+    background-color: #ffdac1;
+    color: #e07a5f;
+    border-color: #f4a261;
+    box-shadow: 0px 5px 0px #f4a261;
+}
+
+/* Container do DuckDuckGo dentro da própria página */
+#container-iframe {
+    margin-top: 15px;
+    width: 100%;
+    height: 380px;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 2px solid #ffd1dc;
+    background-color: #ffffff;
+}
+
+#iframe-ddg {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.escondido {
+    display: none;
+}
